@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { DailyEntryRow, RecoveryLogRow, QuestionSection, SettingsRow } from '~/types/models'
+import type { DailyEntryRow, QuestionSection, RecoveryLogRow, SettingsRow } from '~/types/models'
 import {
   normalizeQuestionsEnabled,
   normalizeQuestionsSkipHoliday,
