@@ -17,8 +17,8 @@ AIへの人生相談にも限界を感じたので仕組化することに協力
 ### ChatGPT
 
 - 日々の悩み相談
-- 相談内容の整理とドキュメント化➤[TAKAYOUJI.md](docs/TAKAYOUJI.md)
-- TAKAYOUJI.mdを元にAGENT.md生成➤[AGENT.md](docs/AGENT.md)
+- 相談内容の整理とドキュメント化 ➤ [TAKAYOUJI.md](docs/TAKAYOUJI.md)
+- TAKAYOUJI.mdを元にAGENT.md生成 ➤ [AGENT.md](AGENT.md)
 
 ### Codex
 
