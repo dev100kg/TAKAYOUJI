@@ -41,7 +41,7 @@
 ## 3. MVP機能
 1) 今日のチェック（質問 + 自由記述）
 2) 結果（スコア + フラグ + 次の一手 1〜3）
-3) ログ（一覧/詳細）
+3) 履歴参照（Homeの直近ログ + /result/:date）
 4) 振り返り（週次の傾向）
 5) 回収（予定/実施/メモ）
 
@@ -222,8 +222,6 @@ Supabase SQL editor で実行する想定。
 - /（Home：今日の状態、直近ログ、回収メーター）
 - /check（入力）
 - /result/:date（まとめ：次の一手優先）
-- /logs（一覧）
-- /logs/:id（詳細）
 - /insights（週次）
 - /settings（回収メニュー編集、質問ON/OFF、export/import）
 
@@ -239,7 +237,7 @@ Supabase SQL editor で実行する想定。
 8) /check フォーム（混在入力対応）
 9) 正規化スコア計算 + フラグ判定 + 提案生成
 10) daily_entries 保存（user_id/date unique）
-11) logs 一覧/詳細
+11) Home 直近ログ表示（/result/:date への導線）
 12) recovery_logs（予定/実施）
 13) insights（過去7日集計：セクション平均、フラグ回数、回収率）
 14) settings（回収メニュー編集、質問ON/OFF）
@@ -247,7 +245,7 @@ Supabase SQL editor で実行する想定。
 16) 基本テスト（正規化、夜判定、祝日判定、フラグ判定）
 
 Definition of Done:
-- 今日の入力→保存→結果→ログ参照が一連で動く
+- 今日の入力→保存→結果→Homeでの履歴参照が一連で動く
 - user_id によるデータ隔離がRLSで保証される
 - 夜判定 20:00-06:00 が適用される
 - 回収が記録でき、週次集計に出る

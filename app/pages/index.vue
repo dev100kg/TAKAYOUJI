@@ -199,8 +199,8 @@ onMounted(load)
                 {{ Object.values(entry.flags ?? {}).filter(Boolean).length }}件
               </p>
             </div>
-            <NuxtLink class="btn-secondary" :to="`/logs/${entry.id}`">
-              詳細
+            <NuxtLink class="btn-secondary" :to="`/result/${entry.date}`">
+              結果
             </NuxtLink>
           </li>
         </ul>

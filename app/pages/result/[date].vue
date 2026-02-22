@@ -180,8 +180,8 @@ onMounted(load)
         <NuxtLink class="btn-primary" to="/check">
           今日のチェックへ
         </NuxtLink>
-        <NuxtLink class="btn-secondary" to="/logs">
-          ログ一覧へ
+        <NuxtLink class="btn-secondary" to="/">
+          ホームへ
         </NuxtLink>
       </div>
     </template>

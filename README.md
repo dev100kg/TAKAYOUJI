@@ -51,8 +51,6 @@ AIへの人生相談にも限界を感じたので仕組化することに協力
 - `/` ホーム（今日の状態 / 回収メーター / 直近ログ）
 - `/check` 今日の入力
 - `/result/:date` 結果
-- `/logs` ログ一覧
-- `/logs/:id` ログ詳細
 - `/insights` 週次インサイト
 - `/settings` 設定（夜判定/質問ON-OFF/土日祝除外）+ JSON export/import
 
