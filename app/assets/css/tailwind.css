@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg-soft: #f6f8f2;
+  --bg-strong: #ecf0e2;
+  --ink: #1e2a25;
+  --accent: #2f6f50;
+  --accent-soft: #cce5d7;
+  --warn: #9a3412;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 12% 18%, rgba(47, 111, 80, 0.14), transparent 36%),
+    radial-gradient(circle at 82% 8%, rgba(219, 150, 84, 0.14), transparent 30%),
+    linear-gradient(180deg, var(--bg-soft) 0%, var(--bg-strong) 100%);
+  font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+}
+
+.card {
+  @apply rounded-2xl border border-emerald-900/10 bg-white/85 shadow-sm backdrop-blur-sm;
+}
+
+.label {
+  @apply text-sm font-medium text-emerald-900/80;
+}
+
+.input {
+  @apply w-full rounded-xl border border-emerald-900/20 bg-white px-3 py-2 text-sm text-emerald-950 outline-none transition focus:border-emerald-700 focus:ring-2 focus:ring-emerald-600/15;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-semibold transition;
+}
+
+.btn-primary {
+  @apply btn bg-emerald-800 text-white hover:bg-emerald-700;
+}
+
+.btn-secondary {
+  @apply btn border border-emerald-900/20 bg-white text-emerald-900 hover:bg-emerald-50;
+}
+
+.btn-danger {
+  @apply btn bg-orange-700 text-white hover:bg-orange-600;
+}
+
+@media (max-width: 768px) {
+  body {
+    background:
+      radial-gradient(circle at 10% 14%, rgba(47, 111, 80, 0.16), transparent 40%),
+      linear-gradient(180deg, var(--bg-soft) 0%, var(--bg-strong) 100%);
+  }
+}
