@@ -77,6 +77,16 @@ NUXT_PUBLIC_SUPABASE_ANON_KEY=...
 pnpm dev
 ```
 
+## Netlify デプロイ時の注意
+
+`500 Internal Server Error: supabaseUrl is required.` が出る場合は、Netlify の環境変数不足です。
+
+- `Site configuration > Environment variables` で以下を設定
+  - `NUXT_PUBLIC_SUPABASE_URL`
+  - `NUXT_PUBLIC_SUPABASE_ANON_KEY`
+- 変数追加/更新後は必ず再デプロイ
+- 値は Supabase `Project Settings > API` の `URL` と `anon public` を使用
+
 ## テスト
 
 ```bash
