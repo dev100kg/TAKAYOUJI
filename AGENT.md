@@ -222,8 +222,13 @@ Supabase SQL editor で実行する想定。
 - /（Home：今日の状態、直近ログ、回収メーター）
 - /check（入力）
 - /result/:date（まとめ：次の一手優先）
+- /history（履歴一覧）
+- /history/:id（ログ詳細）
 - /insights（週次）
 - /settings（回収メニュー編集、質問ON/OFF、export/import）
+
+実装メモ：
+- Nuxtのページディレクトリは `app/pages/history` を使用する（`logs` は `.gitignore` の `logs` ルールと衝突しやすいため非推奨）
 
 
 ## 13. 実装タスク（Codex向け）
