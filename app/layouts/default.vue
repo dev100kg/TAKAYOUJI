@@ -5,6 +5,7 @@ const auth = useAuth()
 const links = [
   { label: 'ホーム', to: '/' },
   { label: 'チェック', to: '/check' },
+  { label: '履歴', to: '/history' },
   { label: '週次', to: '/insights' },
   { label: '設定', to: '/settings' }
 ]
