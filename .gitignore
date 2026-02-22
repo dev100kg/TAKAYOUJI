@@ -29,3 +29,5 @@ coverage
 .env
 .env.*
 !.env.example
+
+docs/IMPLEMENTATION_SUMMARY.md
